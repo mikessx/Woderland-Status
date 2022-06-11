@@ -11,15 +11,11 @@ Richiede Python 3.8 o superiore
 
 Prima di tutto cloniamo il Repository
 ```
-git clone []
+git clone https://github.com/miky08p/Woderland-Status.git
 ```
 
 Poi Entriamo nella Directory
-```
-cd []
-```
-
-E infine Lanciamo lo script del setup, questa operazione può richiedere un pò di tempo
+E lanciamo lo script del setup, questa operazione può richiedere un pò di tempo
 ```
 ./setup.sh
 ```
