@@ -28,7 +28,8 @@ token = config['token']
 prefix = config['prefix']
 emb_color = int(config['color'], 0)
 
-client = commands.Bot(command_prefix=prefix)
+activity = discord.Game(name=f"{prefix}help")
+client = commands.Bot(command_prefix=prefix, activity=activity)
 
 client.remove_command('help')
 
@@ -54,7 +55,6 @@ async def on_ready():
 
 
 @client.command()
-@commands.has_permissions(administrator=True)
 async def dedicato(ctx):
     await ctx.channel.trigger_typing()
     cpu_percent = psutil.cpu_percent(interval=1)
